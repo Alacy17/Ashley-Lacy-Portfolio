@@ -1,0 +1,166 @@
+/* Global Styles
+-------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: #daffed;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  margin: 0;
+}
+
+.heading {
+  font-family: "Playfair Display", serif;
+  font-size: 50px;
+}
+
+.container {
+  max-width: 800px;
+  width: 85%;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+h3 + p {
+  font-style: italic;
+}
+
+h3 ~ p {
+  margin: 0;
+}
+
+/* Profile
+-------------------------------*/
+header {
+  background-color: #eeb868;
+  background-image: url(../images/Trees.jpg);
+  background-size: cover;
+  background-position: center right;
+}
+
+.container h1 {
+  font-size: 85px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+}
+
+/* Projects
+-------------------------------*/
+.projects {
+  background-color: #5b8e7d;
+}
+
+.container .the-weather-app {
+  width: 300px;
+}
+
+.project-item {
+  overflow: hidden;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+.project-summary {
+  font-style: normal;
+}
+
+/* Work Experience
+-------------------------------*/
+
+.work-experience {
+  background-color: #f5d7e3;
+}
+
+.work-experience .work-history {
+  color: #5b8e7d;
+}
+
+/* Education
+-------------------------------*/
+
+.education {
+  background-image: url(../images/Learn2.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding-bottom: 80%;
+}
+
+/* Contact Info
+-------------------------------*/
+footer {
+  background-color: #574d68;
+  color: #f7fff7;
+}
+footer .coder {
+  text-align: center;
+  padding: 25px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list a {
+  padding: 20px;
+  display: inline-block;
+}
+
+/* Responsive
+-------------------------------*/
+@media screen and (min-width: 750px) {
+  header,
+  footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 20px;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  .container h1 {
+    font-size: 75px;
+    margin-bottom: 20px;
+  }
+
+  h1,
+  h2 {
+    line-height: 1;
+  }
+
+  .contact-list a {
+    padding: 5px;
+  }
+}
